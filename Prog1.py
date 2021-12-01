@@ -27,3 +27,9 @@ for letter in range(0, len(yourSntnc)):
                 num_vowels += 1
         else:
                 num_consonant += 1
+
+print("------------------------------------------")
+print("Input:", yourSntnc)
+print("Words:", num_words)
+print("Vowels:", num_vowels)
+print("Consonant:", num_consonant)

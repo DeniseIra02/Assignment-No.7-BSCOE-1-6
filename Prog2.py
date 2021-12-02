@@ -35,3 +35,7 @@ while pw:
         print("Successfully Signed Up.")
         pw=False
         break
+if pw:
+    print("Invalid Password")
+    print (err_mes)
+    print("Make sure that your password meet all of the criteria.")

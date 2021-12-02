@@ -10,3 +10,28 @@ user_nm = input("Enter your Username: \n> ")
 print("----------------------------------------")
 pass_wrd = input("Enter your Password: \n> ")
 print("----------------------------------------")
+
+err_mes = str
+pw = True
+
+while pw:  
+    if (len(pass_wrd) < 16):
+        err_mes = 'Password length should be greater than 15 characters.'
+        break
+    elif not re.search("[a-z]",pass_wrd):
+        err_mes = 'Password should have at least one small letter.'
+        break
+    elif not re.search("[0-9]",pass_wrd):
+        err_mes = 'Password should have at least one number.'
+        break
+    elif not re.search("[A-Z]",pass_wrd):
+        err_mes = 'Password should have at least one capital letter.'
+        break
+    elif not re.search("[!@#$%^&*()_+<>]",pass_wrd):
+        err_mes = 'Password should have at least one special character.'
+        break
+    else:
+        print("Valid Password")
+        print("Successfully Signed Up.")
+        pw=False
+        break
